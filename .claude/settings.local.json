@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node dist/index.js --version)",
+      "Bash(node dist/index.js)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(f\\\\\"  - {t['name']}: {t['description'][:60]}...\\\\\"\\) for t in d['result']['tools']]\")",
+      "Bash(node test.mjs)",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"import\\('yahoo-finance2'\\).then\\(m => console.log\\(Object.keys\\(m.default\\)\\)\\).catch\\(e => console.error\\(e.message\\)\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(npm whoami *)",
+      "Bash(npm pack *)",
+      "Bash(npm set *)",
+      "Read(//Users/huy.b.nguyen/.claude/**)",
+      "Bash(cat ~/.claude.json 2>/dev/null || echo \"No ~/.claude.json found\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('mcpServers', {}\\), indent=2\\)\\)\")",
+      "Bash(python3 -m json.tool \"/Users/huy.b.nguyen/Library/Application Support/Claude/claude_desktop_config.json\")",
+      "Bash(node /Users/huy.b.nguyen/Desktop/stock-mcp/dist/index.js --version)"
+    ]
+  }
+}

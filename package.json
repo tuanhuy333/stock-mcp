@@ -1,0 +1,44 @@
+{
+  "name": "@tuanhuy3709/stock-data-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for real-time stock market data powered by Yahoo Finance",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "stock",
+    "finance",
+    "yahoo-finance",
+    "trading",
+    "technical-analysis"
+  ],
+  "author": "huy.b.nguyen",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "stock-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "technicalindicators": "^3.1.0",
+    "yahoo-finance2": "^3.15.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
